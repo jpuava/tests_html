@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A beginner-friendly starter website." />
+  <title>Starter Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <p class="eyebrow">Web Development Starter</p>
+    <h1>Build. Learn. Launch.</h1>
+    <p class="subtitle">
+      This project is your sandbox for learning HTML, CSS, and JavaScript from scratch.
+    </p>
+    <button id="helloBtn" class="primary-btn">Try JavaScript</button>
+  </header>
+
+  <main>
+    <section class="card-grid" aria-label="Learning steps">
+      <article class="card">
+        <h2>1. HTML</h2>
+        <p>Define your page structure with headings, sections, links, and forms.</p>
+      </article>
+      <article class="card">
+        <h2>2. CSS</h2>
+        <p>Style typography, colors, spacing, and layout for desktop and mobile.</p>
+      </article>
+      <article class="card">
+        <h2>3. JavaScript</h2>
+        <p>Add behavior with events, DOM updates, and data from APIs.</p>
+      </article>
+    </section>
+
+    <section class="progress-panel" aria-live="polite">
+      <h2>Your Next Task</h2>
+      <p id="taskText">Click the button above to start your first interaction.</p>
+    </section>
+
+    <section class="contact-panel" aria-labelledby="contactTitle">
+      <h2 id="contactTitle">Contact</h2>
+      <p class="contact-intro">Practice with forms and validation by sending a demo message.</p>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required minlength="2" />
+          <p id="nameError" class="field-error" aria-live="polite"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+          <p id="emailError" class="field-error" aria-live="polite"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+          <p id="messageError" class="field-error" aria-live="polite"></p>
+        </div>
+
+        <button type="submit" class="primary-btn">Send Message</button>
+        <p id="formStatus" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made in your local workspace! Ready to publish when you are.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
