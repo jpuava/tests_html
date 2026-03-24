@@ -37,10 +37,38 @@
       <h2>Your Next Task</h2>
       <p id="taskText">Click the button above to start your first interaction.</p>
     </section>
+
+    <section class="contact-panel" aria-labelledby="contactTitle">
+      <h2 id="contactTitle">Contact</h2>
+      <p class="contact-intro">Practice with forms and validation by sending a demo message.</p>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required minlength="2" />
+          <p id="nameError" class="field-error" aria-live="polite"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+          <p id="emailError" class="field-error" aria-live="polite"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+          <p id="messageError" class="field-error" aria-live="polite"></p>
+        </div>
+
+        <button type="submit" class="primary-btn">Send Message</button>
+        <p id="formStatus" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <p>Made in your local workspace. Ready to publish when you are.</p>
+    <p>Made in your local workspace! Ready to publish when you are.</p>
   </footer>
 
   <script src="script.js"></script>

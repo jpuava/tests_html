@@ -1,5 +1,5 @@
 :root {
-  --bg-start: #f7efe5;
+  --bg-start: #c8c5c2;
   --bg-end: #d9e4f5;
   --ink: #1d1f24;
   --accent: #0f6cbd;
@@ -88,7 +88,8 @@ h1 {
 }
 
 .card,
-.progress-panel {
+.progress-panel,
+.contact-panel {
   background: rgba(255, 255, 255, 0.85);
   border-radius: 1rem;
   border: 1px solid rgba(15, 108, 189, 0.08);
@@ -112,10 +113,70 @@ h1 {
   margin-top: 1rem;
 }
 
+.contact-panel {
+  margin-top: 1rem;
+}
+
+.contact-intro {
+  margin-top: 0.5rem;
+}
+
+.contact-form {
+  margin-top: 1rem;
+}
+
+.form-field {
+  margin-bottom: 0.85rem;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  border: 1px solid #bfc7d4;
+  border-radius: 0.65rem;
+  padding: 0.65rem 0.75rem;
+  font: inherit;
+  background: #ffffff;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: 2px solid rgba(15, 108, 189, 0.24);
+  outline-offset: 1px;
+  border-color: var(--accent);
+}
+
+.field-error {
+  margin: 0.4rem 0 0;
+  min-height: 1em;
+  color: #a31919;
+  font-size: 0.9rem;
+}
+
+.form-status {
+  margin-top: 0.8rem;
+  min-height: 1em;
+  font-weight: 600;
+}
+
+.form-status.success {
+  color: #0d6a2e;
+}
+
+.form-status.error {
+  color: #a31919;
+}
+
 .site-footer {
   margin-top: 1.25rem;
   text-align: center;
-  color: #4e5764;
+  color: #54d537;
   font-size: 0.95rem;
 }
 

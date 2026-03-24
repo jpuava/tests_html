@@ -16,6 +16,19 @@ Beginner practice tasks
 3. Add a fourth card in the card-grid section.
 4. In script.js, change the button behavior to show a custom message.
 
+How to validate the contact form
+1. Open index.html and scroll to the Contact section.
+2. Click Send Message with empty fields.
+	You should see error messages for invalid fields.
+3. Enter a 1-letter name, an invalid email (for example abc), and a short message.
+	You should still see validation errors.
+4. Enter valid values:
+	- Name with 2+ characters
+	- Email in a valid format like you@example.com
+	- Message with at least 10 characters
+5. Click Send Message.
+	You should see a success status message.
+
 What to do when the site is ready
 1. Create a GitHub repository and push your files.
 2. Enable GitHub Pages in repository settings.
